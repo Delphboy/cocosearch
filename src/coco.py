@@ -153,7 +153,6 @@ def main():
 
     if args.caption is not None:
         coco_dataset = Coco("config.json")
-        print(coco_dataset.get_ids()[:10])
         search_caption(coco_dataset, args.caption[0])
 
     if args.image_id is not None:
